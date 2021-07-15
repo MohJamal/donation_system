@@ -1,13 +1,13 @@
 {
  "actions": [],
- "autoname": "field:donor_name",
+ "autoname": "naming_series:",
  "creation": "2021-07-15 14:59:11.530600",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "basic_information_section",
-  "number",
+  "naming_series",
   "donor_name",
   "type",
   "gender",
@@ -36,19 +36,11 @@
    "label": "Basic Information"
   },
   {
-   "fieldname": "number",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Number",
-   "reqd": 1
-  },
-  {
    "fieldname": "donor_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "type",
@@ -157,14 +149,23 @@
    "fieldname": "attachments_add",
    "fieldtype": "Button",
    "label": "Attachments Add"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Number",
+   "options": "D-",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-15 15:33:15.574658",
+ "modified": "2021-07-15 16:38:48.342401",
  "modified_by": "Administrator",
  "module": "Donation System",
  "name": "Donor f",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
