@@ -1,1 +1,7 @@
-# donation_system
+## Donation System
+
+Donation System App
+
+#### License
+
+MIT
