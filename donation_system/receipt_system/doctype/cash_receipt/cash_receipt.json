@@ -1,0 +1,348 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-07-18 12:46:04.130239",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cash_receipt_section",
+  "receipt_type",
+  "naming_series",
+  "registration_number",
+  "currency",
+  "amount_sar",
+  "statement",
+  "cash_classification",
+  "partner_type",
+  "partner_name",
+  "partner_record_preview",
+  "data_12",
+  "debtor_account",
+  "column_break_14",
+  "cost_center",
+  "project_name",
+  "original_name",
+  "terms_of_payment__days",
+  "terms_of_payment__date",
+  "additional_notes",
+  "record_status",
+  "created_by",
+  "date_created",
+  "branch",
+  "attachments_section",
+  "document_name",
+  "file_path",
+  "document_upload",
+  "items_and_products",
+  "items_and_products_section",
+  "itemproduct_no",
+  "itemproduct_name",
+  "account",
+  "cost_center_2",
+  "data_34",
+  "unit",
+  "unit_price",
+  "discount_percentage",
+  "discount_value",
+  "column_break_40",
+  "total_after_discount",
+  "added_tax_rate",
+  "added_tax_value",
+  "net",
+  "description",
+  "total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "receipt_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Receipt Type",
+   "options": "Cash Receipt Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cash_receipt_section",
+   "fieldtype": "Section Break",
+   "label": "Cash Receipt"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Select",
+   "label": "Registration Number ",
+   "options": "RN-"
+  },
+  {
+   "default": "SAR",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_sar",
+   "fieldtype": "Float",
+   "label": "Amount (SAR)"
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Text",
+   "label": "Statement"
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Data",
+   "label": "Partner Type"
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Link",
+   "label": "Partner Name",
+   "options": "Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_record_preview",
+   "fieldtype": "Button",
+   "label": "Partner Record Preview"
+  },
+  {
+   "fieldname": "data_12",
+   "fieldtype": "Data",
+   "label": "Partner Account"
+  },
+  {
+   "fieldname": "debtor_account",
+   "fieldtype": "Data",
+   "label": "Debtor Account"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "original_name",
+   "fieldtype": "Data",
+   "label": "Original Name"
+  },
+  {
+   "fieldname": "terms_of_payment__days",
+   "fieldtype": "Int",
+   "label": "Terms Of Payment  (Days)"
+  },
+  {
+   "fieldname": "terms_of_payment__date",
+   "fieldtype": "Date",
+   "label": "Terms Of Payment  (Date)"
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "record_status",
+   "fieldtype": "Data",
+   "label": "Record Status "
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created by"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Date",
+   "label": "Date Created",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "file_path",
+   "fieldtype": "Attach",
+   "label": "File Path"
+  },
+  {
+   "fieldname": "document_upload",
+   "fieldtype": "Button",
+   "label": "Document Upload"
+  },
+  {
+   "default": "0",
+   "fieldname": "items_and_products_section",
+   "fieldtype": "Check",
+   "label": "Items And Products Section"
+  },
+  {
+   "fieldname": "itemproduct_no",
+   "fieldtype": "Int",
+   "label": "Item/Product No."
+  },
+  {
+   "fieldname": "itemproduct_name",
+   "fieldtype": "Data",
+   "label": "Item/Product Name"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "label": "Account"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "items_and_products",
+   "fieldtype": "Section Break",
+   "label": "Items And Products "
+  },
+  {
+   "fieldname": "data_34",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Float",
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Float",
+   "label": "Discount Percentage "
+  },
+  {
+   "fieldname": "discount_value",
+   "fieldtype": "Float",
+   "label": "Discount Value"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total_after_discount",
+   "fieldtype": "Float",
+   "label": "Total After Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "added_tax_rate",
+   "fieldtype": "Float",
+   "label": "Added Tax Rate"
+  },
+  {
+   "fieldname": "added_tax_value",
+   "fieldtype": "Float",
+   "label": "Added Tax Value"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "net",
+   "fieldtype": "Float",
+   "label": "Net",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cash Receipt",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Receipt Number",
+   "options": "CR-"
+  },
+  {
+   "fieldname": "cash_classification",
+   "fieldtype": "Link",
+   "label": "Cash Classification",
+   "options": "Cash Classification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center_2",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-19 14:29:46.549043",
+ "modified_by": "Administrator",
+ "module": "Receipt System",
+ "name": "Cash Receipt",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

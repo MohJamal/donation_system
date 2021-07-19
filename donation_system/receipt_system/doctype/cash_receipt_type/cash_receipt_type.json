@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "field:cash_receipt_type",
+ "creation": "2021-07-19 13:32:43.283337",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cash_receipt_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "cash_receipt_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cash Receipt Type",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-19 13:33:55.446798",
+ "modified_by": "Administrator",
+ "module": "Receipt System",
+ "name": "Cash Receipt Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

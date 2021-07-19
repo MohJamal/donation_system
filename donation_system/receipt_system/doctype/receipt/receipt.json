@@ -1,0 +1,413 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-07-19 04:08:52.106836",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "receipt_type",
+  "donation_details_section",
+  "donation_classification",
+  "column_break_4",
+  "project_name",
+  "donation_amount_for_the_project",
+  "project_add",
+  "beneficiary_name",
+  "donation_amount_for_the_beneficiary",
+  "beneficiary_add",
+  "follower_name",
+  "donation_amount_for_the_follower",
+  "follower_add",
+  "receipt_section",
+  "naming_series",
+  "receipt_date",
+  "registration_number",
+  "currrency",
+  "amount_sar",
+  "statement",
+  "partner_type",
+  "partner_name",
+  "partner_record_preview",
+  "partner_account",
+  "creditor_account",
+  "column_break_26",
+  "cost_center",
+  "delegate_name",
+  "terms_of_payment_days",
+  "terms_of_payment_dates",
+  "additional_notes",
+  "record_status",
+  "created_by",
+  "date_created",
+  "branch",
+  "attachments_section",
+  "document_name",
+  "file_path",
+  "document_upload",
+  "items_and_products",
+  "items_and_products_section",
+  "itemproduct_no",
+  "itemproduct_name",
+  "account",
+  "cost_center_2",
+  "quantity",
+  "unit",
+  "unit_price",
+  "column_break_46",
+  "discount_percentage",
+  "discount_value",
+  "total_after_discount",
+  "added_tax_rate",
+  "added_tax_value",
+  "net",
+  "description",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "receipt_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Receipt Type",
+   "options": "Receipt Type",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.receipt_type == 'Donation Receipt';",
+   "fieldname": "donation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Donation details"
+  },
+  {
+   "fieldname": "receipt_section",
+   "fieldtype": "Section Break",
+   "label": "Receipt"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "items_and_products_section",
+   "fieldtype": "Data",
+   "label": "Items And Products Section"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Project';",
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Project';",
+   "fieldname": "donation_amount_for_the_project",
+   "fieldtype": "Float",
+   "label": "Donation Amount For The Project "
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Project';",
+   "fieldname": "project_add",
+   "fieldtype": "Button",
+   "label": "Project Add"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Beneficiary';",
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Beneficiary';",
+   "fieldname": "donation_amount_for_the_beneficiary",
+   "fieldtype": "Float",
+   "label": "Donation Amount For The Beneficiary"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Beneficiary';",
+   "fieldname": "beneficiary_add",
+   "fieldtype": "Button",
+   "label": "Beneficiary Add"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Follower';",
+   "fieldname": "follower_name",
+   "fieldtype": "Data",
+   "label": "Follower Name"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Follower';",
+   "fieldname": "donation_amount_for_the_follower",
+   "fieldtype": "Float",
+   "label": "Donation Amount For The Follower"
+  },
+  {
+   "depends_on": "eval:doc.donation_classification == 'Follower';",
+   "fieldname": "follower_add",
+   "fieldtype": "Button",
+   "label": "Follower Add"
+  },
+  {
+   "fieldname": "donation_classification",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Donation Classification",
+   "options": "Donation Classification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Date",
+   "label": "Receipt Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Select",
+   "label": "Registration Number ",
+   "options": "RN-"
+  },
+  {
+   "default": "SAR",
+   "fieldname": "currrency",
+   "fieldtype": "Link",
+   "label": "Currrency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Text",
+   "label": "Statement"
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Data",
+   "label": "Partner Type"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Receipt Number ",
+   "options": "R-"
+  },
+  {
+   "fieldname": "creditor_account",
+   "fieldtype": "Data",
+   "label": "Creditor Account"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delegate_name",
+   "fieldtype": "Data",
+   "label": "Delegate Name"
+  },
+  {
+   "fieldname": "terms_of_payment_days",
+   "fieldtype": "Int",
+   "label": "Terms of Payment (Days)"
+  },
+  {
+   "fieldname": "terms_of_payment_dates",
+   "fieldtype": "Date",
+   "label": "Terms of Payment (Dates)"
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "record_status",
+   "fieldtype": "Data",
+   "label": "Record Status"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Date",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_sar",
+   "fieldtype": "Float",
+   "label": "Amount (SAR)"
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Link",
+   "label": "Partner Name",
+   "options": "Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_record_preview",
+   "fieldtype": "Button",
+   "label": "Partner Record Preview"
+  },
+  {
+   "fieldname": "partner_account",
+   "fieldtype": "Data",
+   "label": "Partner Account"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "file_path",
+   "fieldtype": "Attach",
+   "label": "File Path"
+  },
+  {
+   "fieldname": "document_upload",
+   "fieldtype": "Button",
+   "label": "Document Upload"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "items_and_products",
+   "fieldtype": "Section Break",
+   "label": "Items And Products"
+  },
+  {
+   "fieldname": "itemproduct_no",
+   "fieldtype": "Data",
+   "label": "Item/Product No."
+  },
+  {
+   "fieldname": "itemproduct_name",
+   "fieldtype": "Data",
+   "label": "Item/Product Name"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "label": "Account"
+  },
+  {
+   "fieldname": "cost_center_2",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Data",
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Data",
+   "label": "Discount Percentage "
+  },
+  {
+   "fieldname": "discount_value",
+   "fieldtype": "Data",
+   "label": "Discount Value"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total_after_discount",
+   "fieldtype": "Data",
+   "label": "Total After Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "added_tax_rate",
+   "fieldtype": "Data",
+   "label": "Added Tax Rate"
+  },
+  {
+   "fieldname": "added_tax_value",
+   "fieldtype": "Data",
+   "label": "Added Tax Value"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "net",
+   "fieldtype": "Data",
+   "label": "Net",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-19 14:33:33.756268",
+ "modified_by": "Administrator",
+ "module": "Receipt System",
+ "name": "Receipt",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
