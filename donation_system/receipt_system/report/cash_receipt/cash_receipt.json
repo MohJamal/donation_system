@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-07-24 03:41:41.189797",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-07-24 03:41:41.189797",
+ "modified_by": "Administrator",
+ "module": "Receipt System",
+ "name": "Cash Receipt",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Cash Receipt",
+ "report_name": "Cash Receipt",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

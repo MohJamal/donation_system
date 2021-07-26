@@ -17,7 +17,7 @@
   "partner_type",
   "partner_name",
   "partner_record_preview",
-  "data_12",
+  "partner_account",
   "debtor_account",
   "column_break_14",
   "cost_center",
@@ -108,11 +108,6 @@
    "fieldname": "partner_record_preview",
    "fieldtype": "Button",
    "label": "Partner Record Preview"
-  },
-  {
-   "fieldname": "data_12",
-   "fieldtype": "Data",
-   "label": "Partner Account"
   },
   {
    "fieldname": "debtor_account",
@@ -318,12 +313,17 @@
    "fieldtype": "Link",
    "label": "Cost Center",
    "options": "Cost Center"
+  },
+  {
+   "fieldname": "partner_account",
+   "fieldtype": "Data",
+   "label": "Partner Account"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-07-19 14:29:46.549043",
+ "modified": "2021-07-24 20:18:52.546414",
  "modified_by": "Administrator",
  "module": "Receipt System",
  "name": "Cash Receipt",

@@ -54,9 +54,9 @@
   "quantity",
   "unit",
   "unit_price",
-  "column_break_46",
   "discount_percentage",
   "discount_value",
+  "column_break_51",
   "total_after_discount",
   "added_tax_rate",
   "added_tax_value",
@@ -155,8 +155,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Donation Classification",
-   "options": "Donation Classification",
-   "reqd": 1
+   "options": "Donation Classification"
   },
   {
    "fieldname": "column_break_4",
@@ -322,7 +321,7 @@
   },
   {
    "fieldname": "quantity",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Quantity"
   },
   {
@@ -332,63 +331,63 @@
   },
   {
    "fieldname": "unit_price",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Unit Price"
   },
   {
    "fieldname": "discount_percentage",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Discount Percentage "
   },
   {
    "fieldname": "discount_value",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Discount Value"
   },
   {
    "default": "0.00",
    "fieldname": "total_after_discount",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Total After Discount",
    "read_only": 1
   },
   {
    "fieldname": "added_tax_rate",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Added Tax Rate"
   },
   {
    "fieldname": "added_tax_value",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Added Tax Value"
   },
   {
    "default": "0.00",
    "fieldname": "net",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Net",
    "read_only": 1
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Description"
   },
   {
    "default": "0.00",
    "fieldname": "total",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Total",
    "read_only": 1
   },
   {
-   "fieldname": "column_break_46",
+   "fieldname": "column_break_51",
    "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-19 14:33:33.756268",
+ "modified": "2021-07-24 20:08:03.053302",
  "modified_by": "Administrator",
  "module": "Receipt System",
  "name": "Receipt",
